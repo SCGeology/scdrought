@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SC Drought</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/small-business.css" rel="stylesheet">
+      
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />  
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">South Carolina Drought</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Conditions
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Impacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Committee</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Planning</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Heading Row -->
+      <div class="row my-4">
+        <div class="col-lg-8">
+          <div id="map"></div>
+        </div>
+        <!-- /.col-lg-8 -->
+        <div class="col-lg-4">
+          <h1>Current Status</h1>
+          <div id="con-table">
+              <div class="con-row"><div class="con-head" id="normal">Normal</div><div class="con-value">25 Counties</div></div>
+              <div class="con-row"><div class="con-head" id="incipient">Incipient</div><div class="con-value">11 Counties</div></div>
+              <div class="con-row"><div class="con-head" id="moderate">Moderate</div><div class="con-value">10 Counties</div></div>
+              <div class="con-row"><div class="con-head" id="severe">Severe</div><div class="con-value">0 Counties</div></div>
+              <div class="con-row"><div class="con-head" id="extreme">Extreme</div><div class="con-value">0 Counties</div></div>
+          </div>
+          <p><a href="#">Current Drought Conditions >>></a> Find out more about current drought conditions and how drought status is determined in South Carolina.</p>    
+        </div>
+        <!-- /.col-md-4 -->
+      </div>
+      <!-- /.row -->
+      </div>     
+        
+      <!-- Call to Action Well -->
+      <div class="container-fluid mid-bar" >
+          <div class="container">   
+            <p class="m-2">Drought in South Carolina is monitored by the State Climate Office within the SC Department of Natural Resources, and the SC Drought Committee....and so on and so forth...</p>
+          </div>      
+      </div>
+
+      <div class="container">
+      <!-- Content Row -->
+      <div class="row">
+          <div class="col-md-1 mb-1"></div>
+        <div class="col-md-5 mb-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Drought Resources</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <img class="card-img" src="images/fire.jpg"/>
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-5 mb-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Impacts</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <img class="card-img" src="images/hartwell.JPG"/>    
+            </div>
+          </div>    
+        </div>
+          <div class="col-md-1 mb-1"></div>    
+      </div>
+      <!-- /.row -->
+           <!-- Content Row -->
+      <div class="row">
+          <div class="col-md-1 mb-1"></div>
+        <div class="col-md-5 mb-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Committee Members</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+              <img class="card-img" src="images/clay.jpg"/>    
+            </div>
+          </div>
+        </div>        
+        <div class="col-md-5 mb-5">
+          <div class="card h-100">
+            <div class="card-body">
+              <h2 class="card-title">Legislation and Plans</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                <img class="card-img" src="images/lake.jpg"/>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-1 mb-1"></div>    
+      </div>
+      <!-- /.row -->
+        
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>  
+      
+    <script src="js/scCounties.geojson"></script>   
+    <script src="js/droughtmap.js"></script>  
+     
+
+  </body>
+
+</html>

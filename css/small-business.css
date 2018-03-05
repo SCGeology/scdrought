@@ -1,0 +1,66 @@
+/*!
+ * Start Bootstrap - Small Business (https://startbootstrap.com/template-overviews/small-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+body {
+    color:#2b2b2b;
+}
+
+#map {height:400px;}
+#con-table{
+    width: 100%;
+    display: table;
+    margin-bottom:20px;
+    border-spacing: 5px;
+}
+.con-row {
+    display: table-row;
+}
+.con-head, con-value {
+    display:table-cell;
+    padding:0.5em;
+}
+.con-head{
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color:#0c59b7;
+    color:#fff;
+}
+.btn-custom:hover {
+    color:#e6ebf2;
+}
+
+.navbar {
+    background-color:#264656;
+}
+
+.mid-bar{
+    background-color: #e0e5de;
+    padding:1em;
+    margin-bottom:1em;
+}
+
+.dnrlogo{
+    width:60px;;
+    height: auto;
+}
+
+#normal{background-color:#91ed8e;}
+#incipient{background-color: #f2f079;}
+#moderate{background-color:#ffae35;}
+#severe{background-color:indianred;}
+#extreme{background-color:#e171f7;}
