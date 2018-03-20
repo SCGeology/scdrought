@@ -57,7 +57,7 @@ body {
 
 .graph {
     float:right;
-    letter-spacing: -1.5px;
+    letter-spacing: -0.1rem;
 }
 .con-head{
     min-width:250px;
@@ -75,6 +75,16 @@ body {
 #Moderate-h{background-color:#ffae35;}
 #Severe-h{background-color:indianred;}
 #Extreme-h{background-color:#e171f7;}
+
+.thumb{
+    position: absolute;
+    bottom:0;
+    left:0;
+    height:400px;
+    width:50px;
+    background-color:rgba(250,255,255,0.3);
+    z-index: 1000;
+}
 
 /*archived*/
 .archive-container form {

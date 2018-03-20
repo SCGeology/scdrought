@@ -1,14 +1,15 @@
 var map = L.map('map', {
-    scrollWheelZoom: false,
-    zoomControl: false
-}).setView([33.6, -81.0], 7);
+    zoomControl: false,
+    maxZoom: 8,
+    minZoom: 6,
+    zoomDelta: 0.5,
+    doubleClickZoom:'center',
+    maxBounds:[[37, -85],[30.5,-77]]
+}).fitBounds([[35.3, -83.4],[31.9,-78.44]]);
 
 var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
     attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-    maxZoom: 16
 }).addTo(map);
-
-map.dragging.disable();
 
 var data = "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/drought_status/FeatureServer/0"
 
