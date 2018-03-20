@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,135 +15,179 @@
 
     <!-- Custom styles for this template -->
     <link href="css/small-business.css" rel="stylesheet">
-      
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />  
 
-  </head>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
 
-  <body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+
+</head>
+
+<body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="./index.html">South Carolina Drought</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Conditions
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">South Carolina Drought</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Conditions
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Impacts</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Committee</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Planning</a>
-            </li>
-          </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Impacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="committee.html">Committee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Planning</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
-        
+
         <h1 style="margin-top:0.5em;">Drought Conditions in South Carolina</h1>
-        
-      <!-- Heading Row -->
-      <div class="row my-4">
-        <div class="col-lg-7">
-          <div id="map"></div>
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-5">
-            <h3><span id="qualifier">Current</span> Status: <span id="date"></span></h3>
+
+        <!-- Heading Row -->
+        <div class="row my-4">
+            <div class="col-lg-7">
+                <div id="map"></div>
+            </div>
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-5">
+                <h4><span id="qualifier">Current</span> Status: <span id="date"></span></h4>
+                <h6 id="reportdl"><a href="#"> Drought Status Report (PDF) <i class="fas fa-download fa-lg"></i></a></h6>
                 <div id="con-table">
                     <div class="con-row">
-                        <div class="con-head" id="Normal-h">Normal<span class="graph" ></span></div>
+                        <div class="con-head" id="Normal-h">Normal<span class="graph"></span></div>
                         <div class="con-value"><span id="Normal"></span></div>
                     </div>
                     <div class="con-row">
-                        <div class="con-head" id="Incipient-h">Incipient<span class="graph" ></span></div>
+                        <div class="con-head" id="Incipient-h">Incipient<span class="graph"></span></div>
                         <div class="con-value"><span id="Incipient"></span></div>
                     </div>
                     <div class="con-row">
-                        <div class="con-head" id="Moderate-h">Moderate<span class="graph" ></span></div>
+                        <div class="con-head" id="Moderate-h">Moderate<span class="graph"></span></div>
                         <div class="con-value"><span id="Moderate"></span></div>
                     </div>
                     <div class="con-row">
-                        <div class="con-head" id="Severe-h">Severe<span class="graph" ></span></div>
+                        <div class="con-head" id="Severe-h">Severe<span class="graph"></span></div>
                         <div class="con-value"><span id="Severe"></span></div>
                     </div>
                     <div class="con-row">
-                        <div class="con-head" id="Extreme-h">Extreme<span class="graph" ></span></div>
+                        <div class="con-head" id="Extreme-h">Extreme<span class="graph"></span></div>
                         <div class="con-value"><span id="Extreme"></span></div>
                     </div>
-                    <p>Number of counties within each category.</p>
                 </div>
-          <h4>Archived Drought Status</h4>
-          <div class="slider-container" title="Slide to view previous drought status maps.">
-                <input type="range" min="0" max="" value="" class="slider" id="archived">
-          </div>    
+                <p id="legend">Number of Counties in Each Category.</p>
+                
+                <h4>Archived Drought Status</h4>
+                <div class="archive-container" >
+                    <form>
+                        <button type="button" class="btn btn-info" id="backward" title="Click to view previous archived status maps."><i class="fas fa-chevron-circle-left fa-lg"></i></button>
+                        <div class="form-group" id="archive-group">
+                            <select class="form-control" id="archive-select">
+                                <option value="current">Current</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-info" id="forward" title="Click to view forward archived status maps." disabled><i class="fas fa-chevron-circle-right fa-lg"></i></button>
+                    </form>
+                </div>
+            </div>
+            <!-- /.col-md-4 -->
         </div>
-        <!-- /.col-md-4 -->
-      </div>
-      
-    <div class="row my-4">
-        <div class="col-lg-12">
-        <h4>The Top 7 Indicators</h4>
-        <h5>South Carolina uses these seven indicators to determine the current drought status.</h5>
-            Need a list... this is just random below. 
-        <ul>
-            <li>National Drought Monitor</li>
-            <li>Streamflow Levels</li>
-            <li>Lake/Reservoir Levels</li>
-            <li>Palmer Drought Severity Index</li>
-            <li>Groundwater Levels</li>
-            <li>Crop Moisture Index</li>
-            <li>Standardized Preecipitation Index</li>
-        </ul>
+
+        <div class="row my-4">
+            <div class="col-lg-12">
+                <h4>The Top 7 Indicators</h4>
+                <h5>South Carolina uses these seven indicators to determine the current drought status.</h5>
+                <ul>
+                    <li><a href="http://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?SC" target="_blank">United States Drought Monitor for South Carolina</a></li>
+                    <li>Crop Moisture Index</li>
+                    <li>Palmer Drought Severity Index</li>
+                    <li>Streamflow Levels</li>
+                    <li>Lake/Reservoir Levels</li>
+                    <li>Groundwater Levels</li>
+                    <li>Keetch-Byram Drought Index</li>
+                    <li>Percent of Normal Rainfall (NOAA)
+                        <br>
+                        <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.8370597171&location_name=CONUS_+_Puerto_Rico&location_type=us&lon=-81.2014116022&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last30days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 30 Days</a>
+                        <br>
+                        <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.4987498812&location_name=CONUS_%20_Puerto_Rico&location_type=us&lon=-80.8663285944&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last60days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 60 Days</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-        
-    </div>    
-    
-    <div class="row my-4">
-        <div class="col-lg-12">
-        <h4>Other Drought Indicators</h4>
-        <h5>There are numerous sources of information for assessing drought for different environmental factors and industries.</h5>
+
+        <div class="row my-4">
+            <div class="col-lg-12">
+                <h4>Other Drought Indicators</h4>
+                <p>There are numerous sources of information for assessing drought for different environmental factors and industries.</p>
+                    <h6>Drought Indices</h6>
+                    <ul>
+                        <li>Standard Precipitation Index</li>
+                    </ul>
+                    <h6>Water Resources</h6>
+                    <ul>
+                        <li>South Carolina Groundwater Data Monitoring - SCDNR</li>
+                        <li>South Carolina Groundwater Network - USGS</li>
+                        <li>USGS Real-Time Streamflow Conditions</li>
+                        <li>Savannah River Lake Levels - USACE</li>
+                        <li>USGS Duration Graphs</li>
+                    </ul>
+                    <h6>Forestry</h6>
+                    <ul>
+                        <li>Current Fire Weather - SC Forestry Commission</li>
+                        <li>U.S. Forest Service Wildland Fire Assessment System</li>
+                        <li>National Keethc-Byram Soil Moisture Drought Index - USDA Forest Service</li>
+                        <li>Departure from Average Greenness - National Interagency Fire Center</li>
+                    </ul>
+                    <h6>Precipitation</h6>
+                    <ul>
+                        <li>CISA Hydroclimate Extremes Atlas</li>
+                        <li>Current Precipitation Accumulation - SE Regional Climate Center</li>
+                        <li>Current Temperature Maps - SE Regional Climate Center</li>
+                        <li>Current Soil Moisture Percentile Ranking</li>
+                    </ul>
+            </div>
         </div>
-    </div>    
-        
+
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+        </div>
+        <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      
-    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
-    <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>  
-      
-    <script src="js/scCounties.geojson"></script>   
-    <script src="js/droughtmap.js"></script>  
-     
 
-  </body>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+    <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>
+
+    <script src="js/scCounties.geojson"></script>
+    <script src="js/droughtmap.js"></script>
+
+
+</body>
 
 </html>

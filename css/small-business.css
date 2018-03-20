@@ -57,10 +57,10 @@ body {
 
 .graph {
     float:right;
-    letter-spacing: -1px;
+    letter-spacing: -1.5px;
 }
 .con-head{
-    min-width:300px;
+    min-width:250px;
 }
 .con-value{
     border:2px solid #ddd;
@@ -76,43 +76,75 @@ body {
 #Severe-h{background-color:indianred;}
 #Extreme-h{background-color:#e171f7;}
 
-/*SLIDER*/
-.slider-container {
+/*archived*/
+.archive-container form {
     width: 100%; /* Width of the outside container */
     padding:8px;
+    display:inline-flex;
+}
+#archive-group {
+    margin: 0 1em;
+    width:50%;
+}
+#legend{
+    font-size:0.8em;
+    padding-right:15px;
+    margin-top: -5px;
+    margin-bottom: 3px;
+    width:100%;
+    text-align: right;
 }
 
-.slider:hover {
-    opacity: 1; /* Fully shown on mouse-over */
+/* committee tables*/
+.tables p{
+    margin-left:10px;
+}
+.divTable{
+	display: table;
+	width: 100%;
+    margin-bottom:1.5em;
+}
+.divTableRow {
+	display: table-row;
+    width:100%;
+}
+.contact {
+    width:40%;
+}
+.group {
+    width:20%
+}
+.member {
+    width:30%;
+}
+.county {
+    width: 10%;
+}
+.area {
+    background-color:#ccc;
+    padding:4px;
+    border-radius: 3px;
 }
 
-.slider {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 15px;
-    border-radius: 5px;   
-    background: #d3d3d3;
-    outline: none;
-    opacity: 0.7;
-    -webkit-transition: .2s;
-    transition: opacity .2s;
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding: 5px 10px;
+    border-bottom:1px solid #ddd;
 }
-.slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%; 
-    background: #4CAF50;
-    border: 3px solid white;
+.divTableHead {
+	font-weight: bold;
+    border-bottom: 1px solid #555;
+}
+.divTableBody {
+	display: table-row-group;
+}
+.contact-info{
+    display:none;
+}
+.fa-plus-square, .fa-minus-square {
+    color:#0b3454;
     cursor: pointer;
 }
-
-.slider::-moz-range-thumb {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background: #4CAF50;
-    border: 3px solid white;
-    cursor: pointer;
+#reportdl {
+    padding:0.2em;
 }

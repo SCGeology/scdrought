@@ -14,6 +14,8 @@ var data = "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/dr
 
 var fieldNames = []
 var latest
+var oldest
+var position = 0
 
 var statuslayer = L.esri.featureLayer({
     url: data
@@ -68,9 +70,12 @@ function prettydate(field){
     return [field.substring(6,8), field.substring(8), field.substring(2,6)].join("-")
 }
 
-function setSliderValues(l) {
-    $("#archived").prop("max", fieldNames.length-1)
-    $("#archived").prop("max", fieldNames.length-1)
+function setDropdown(l) {
+    $(fieldNames).each(function(i){
+        if (i >0){
+            $("#archive-select").append('<option class="archived-status" value="'+fieldNames[i]+'">'+prettydate(fieldNames[i])+'</option>');
+        }
+    });
     $("#date").text(prettydate(l));
 }
 
@@ -81,25 +86,47 @@ function getLatest() {
                 fieldNames.push(v.name)
             }
         });
-        latest = fieldNames.sort()[fieldNames.length - 1];
+        latest = fieldNames.reverse()[0];
+        oldest = fieldNames[fieldNames.length-1]
         setLayer(latest);
         getStats(latest);
-        setSliderValues(latest);
+        setDropdown(latest);
     });
 }
 //call to get data updated
 getLatest();
 
-//slider stuff
-$("#archived").change(function() {
-    setLayer(fieldNames[this.value]);
-    getStats(fieldNames[this.value]);
-    $("#date").text(prettydate(fieldNames[this.value]));
-    if (this.value != fieldNames.length-1){
-        $("#qualifier").text("Archived");
-        console.log("woo")
+$("#archive-select").change(function(){
+    if (this.value == "current"){
+        setLayer(latest);
+        getStats(latest);
+        $("#date").text(prettydate(latest));
+        $("#forward").prop("disabled", true);
     } else {
-        $("#qualifier").text("Current");
-        console.log("wee")
+        setLayer(this.value);
+        getStats(this.value);
+        $("#date").text(prettydate(this.value));
+        $("#forward").prop("disabled", false)
     }
+    if (this.value == oldest){
+        $("#backward").prop("disabled", true);
+    } else {
+        $("#backward").prop("disabled", false)
+    }
+});
+
+$("#forward").click(function(){
+    $("#archive-select > option:selected")
+        .prop("selected", false)
+        .prev()
+        .prop("selected", true)
+        .trigger("change");
+});
+
+$("#backward").click(function(){
+    $("#archive-select > option:selected")
+        .prop("selected", false)
+        .next()
+        .prop("selected", true)
+        .trigger("change");
 });
