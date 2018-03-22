@@ -70,11 +70,11 @@ body {
     max-width:100px;
 }
 
-#Normal-h{background-color:#91ed8e;}
-#Incipient-h{background-color: #f2f079;}
-#Moderate-h{background-color:#ffae35;}
-#Severe-h{background-color:indianred;}
-#Extreme-h{background-color:#e171f7;}
+#Normal-h{background-color:#ebf4c3;}
+#Incipient-h{background-color: #fdcc8a;}
+#Moderate-h{background-color:#fc8d59;}
+#Severe-h{background-color:#e34a33;}
+#Extreme-h{background-color:#b30000;}
 
 .thumb{
     position: absolute;

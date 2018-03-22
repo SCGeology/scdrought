@@ -28,11 +28,11 @@ var statusQuery = L.esri.query({
 });
 
 function getColor(d) {
-    return d == 'Normal' ? '#91ed8e' :
-        d == 'Incipient' ? '#f2f079' :
-        d == 'Moderate' ? '#ffae35' :
-        d == 'Severe' ? 'indianred' :
-        '#e171f7';
+    return d == 'Normal' ? '#ebf4c3' :
+        d == 'Incipient' ? '#fdcc8a' :
+        d == 'Moderate' ? '#fc8d59' :
+        d == 'Severe' ? '#e34a33' :
+        '#b30000';
 }
 
 function getCount(c, f) {
