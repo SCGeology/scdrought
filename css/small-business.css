@@ -22,15 +22,11 @@ body {
 #con-table{
     width: 100%;
     display: table;
-    border-spacing: 5px;
+    border-spacing: 4px;
+    margin-left: -0.3rem;
 }
 .con-row {
     display: table-row;
-}
-.con-head, .con-value {
-    display:table-cell;
-    padding:0.5em;
-    font-weight: bold;
 }
 .btn-custom {
     background-color:#0c59b7;
@@ -51,24 +47,31 @@ body {
 }
 
 .dnrlogo{
-    width:60px;;
+    width:60px;
     height: auto;
 }
 
 .graph {
     float:right;
-    letter-spacing: -0.05rem;
     font-weight: normal;
+    
 }
-.con-head{
-    min-width:250px;
+
+.con-head {
+    min-width:260px;
+    display:table-cell;
+    font-weight: bold;
+    padding: 0.5em 0 0.5em 0.3em;
 }
 .con-value{
-    border:2px solid #ddd;
+    border-top:2px solid #ddd;
+    border-right:2px solid #ddd;
+    border-bottom:2px solid #ddd;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    padding:5px;
+    padding:0.6em 0.2em;
     max-width:100px;
+    font-weight: bold;
 }
 
 #Normal-h{background-color:#ebf4c3;}
