@@ -57,7 +57,8 @@ body {
 
 .graph {
     float:right;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.05rem;
+    font-weight: normal;
 }
 .con-head{
     min-width:250px;
@@ -71,10 +72,10 @@ body {
 }
 
 #Normal-h{background-color:#ebf4c3;}
-#Incipient-h{background-color: #fdcc8a;}
-#Moderate-h{background-color:#fc8d59;}
-#Severe-h{background-color:#e34a33;}
-#Extreme-h{background-color:#b30000;}
+#Incipient-h{background-color: #fecc5c;}
+#Moderate-h{background-color:#fd8d3c;}
+#Severe-h{background-color:#f03b20;}
+#Extreme-h{background-color:#bd0026;}
 
 .thumb{
     position: absolute;
@@ -157,4 +158,9 @@ body {
 }
 #reportdl {
     padding:0.2em;
+}
+#heatmap{
+    height:100px;
+    background-color:lightsalmon;
+    border:1px solid #333;
 }

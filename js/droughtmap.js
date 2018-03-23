@@ -4,6 +4,7 @@ var map = L.map('map', {
     minZoom: 6,
     zoomDelta: 0.5,
     doubleClickZoom:'center',
+    wheelPxPerZoomLevel:100,
     maxBounds:[[37, -85],[30.5,-77]]
 }).fitBounds([[35.3, -83.4],[31.9,-78.44]]);
 
@@ -27,28 +28,37 @@ var statusQuery = L.esri.query({
     url: data
 });
 
-function getColor(d) {
-    return d == 'Normal' ? '#ebf4c3' :
-        d == 'Incipient' ? '#fdcc8a' :
-        d == 'Moderate' ? '#fc8d59' :
-        d == 'Severe' ? '#e34a33' :
-        '#b30000';
+function decode(d){
+    return d == 0 ? 'Normal' :
+        d == 1 ? 'Incipient' :
+        d == 2 ? 'Moderate' :
+        d == 3 ? 'Severe' :
+        d == 4 ? 'Extreme':
+    'No Status';
 }
+
+function getColor(d) {
+    return d == 0 ? '#ebf4c3' :
+        d == 1 ? '#fecc5c' :
+        d == 2 ? '#fd8d3c' :
+        d == 3 ? '#f03b20' :
+        '#bd0026';
+}
+
 
 function getCount(c, f) {
     statusQuery.where(f + "='" + c + "'").count(function(error, count, response) {
-        $("#" + c).text(count);
-        $("#" + c + "-h > .graph").text("");
+        $("#" + decode(c)).text(count);
+        $("#" + decode(c) + "-h > .graph").text("");
         for (i = 0; i < count; i++) {
-            $("#" + c + "-h > .graph").append("|");
+            $("#" + decode(c) + "-h > .graph").append("|");
         }
     });
 }
 
 function getStats(f) {
-    var cat = ['Normal', 'Incipient', 'Moderate', 'Severe', 'Extreme']
     for (i = 0; i < 5; i++) {
-        getCount(cat[i], f);
+        getCount(i.toString(), f);
     }
 }
 
@@ -63,7 +73,7 @@ function setLayer(f) {
         };
     });
     statuslayer.bindTooltip(function(layer) {
-        return L.Util.template('<span style="font-weight:bold">{CNTYNAME}</span>:<br>{' + f + '}', layer.feature.properties);
+        return '<span style="font-weight:bold">'+layer.feature.properties["CNTYNAME"]+'</span>:<br>' + decode(layer.feature.properties[f]);
     });
 }
 
