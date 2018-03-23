@@ -111,11 +111,13 @@ $("#archive-select").change(function(){
     if (this.value == "current"){
         setLayer(latest);
         getStats(latest);
+        $("#qualifier").text("Current");
         $("#date").text(prettydate(latest));
         $("#forward").prop("disabled", true);
     } else {
         setLayer(this.value);
         getStats(this.value);
+        $("#qualifier").text("Archived");
         $("#date").text(prettydate(this.value));
         $("#forward").prop("disabled", false)
     }
