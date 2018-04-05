@@ -36,7 +36,7 @@
                         <a class="nav-link" href="current.html">Conditions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Impacts</a>
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="#">Committee<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Planning</a>
+                        <a class="nav-link" href="planning.html">Planning</a>
                     </li>
                 </ul>
             </div>
@@ -55,30 +55,45 @@
     <!-- Page Content -->
     <div class="container">
 
-        <h1 style="margin-top:0.5em;">South Carolina Drought Response Committee</h1>
-
-        <img src="http://www.dnr.sc.gov/climate/sco/Drought/Images/sc_drought_areas.gif" class="img-fluid" alt="sc drought response committee regions">
-
+        <h1 class="mt-3">South Carolina Drought Response Committee</h1>
+        
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="http://www.dnr.sc.gov/climate/sco/Drought/Images/sc_drought_areas.gif" class="img-fluid" alt="sc drought response committee regions"/>
+            </div>    
+            <div class="col-lg-1"></div>    
+            <div class="col-lg-4 mt-4" id="committee-toc">
+                <h5>Drought Management Areas</h5>
+                <a href="#west">West Drought Management Area</a><br>
+                <a href="#central">Central Drought Management Area</a><br>
+                <a href="#northeast">Northeast Drought Management Area</a><br>
+                <a href="#southern">Southern Drought Management Area</a>
+                <h5 class="mt-2">Statewide Members</h5>
+                <a href="#state">State Agency Members</a><br>
+                <a href="#invited">Invited Participants</a>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+            
         <!-- Heading Row -->
         <div class="row my-4">
             <div class="col-lg-12 tables">
-                <h4>Committee Members</h4>
                 
-                    <h5 class="area">West Drought Management Area</h5>        
+                <div class="area" id="west"><h5>West Drought Management Area</h5></div>        
                     <p>Counties: Oconee, Pickens, Anderson, Abbeville,McCormick, Edgefield, Aiken, Barnwell, Allendale, Hampton, Jasper, Beaufort</p>
-                <div class="divTable">
-                    <div class="divTableBody">
-                        <div class="divTableRow">
-                            <div class="divTableHead group">Group</div>
-                            <div class="divTableHead member">Committee Member</div>
-                            <div class="divTableHead county">County</div>
-                            <div class="divTableHead contact">Contact Information</div>
+                
+                <div class="container divTable">
+                        <div class="row">
+                            <div class="col-sm-3 header group">Group</div>
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-2 header county">County</div>
+                            <div class="col-sm-4 header contact">Contact Information</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Agriculture</div>
-                            <div class="divTableCell">Reg Williams&nbsp;*Approved by Senate 6/6/02</div>
-                            <div class="divTableCell">Edgefield</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Agriculture</div>
+                            <div class="col-sm-3">Reg Williams&nbsp;*Approved by Senate 6/6/02</div>
+                            <div class="col-sm-2">Edgefield</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Farm Bureau, 851 Columbia Rd., Edgefield, SC 29824</li>
                                     <li>Ph: 803-637-3265</li>
@@ -87,17 +102,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Commission of Public Works</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Commission of Public Works</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Counties</div>
-                            <div class="divTableCell">Mr. F Pickens Williams, Jr. *Approved by Senate/Appointed 6/15/01</div>
-                            <div class="divTableCell">Barnwell</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Counties</div>
+                            <div class="col-sm-3">Mr. F Pickens Williams, Jr. *Approved by Senate/Appointed 6/15/01</div>
+                            <div class="col-sm-2">Barnwell</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Administrator Barnwell County, 57 Wall Street, Barnwell, SC 29812</li>
                                     <li>Ph: 803-541-1010></li>
@@ -106,11 +121,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Domestic User</div>
-                            <div class="divTableCell">Dennis Chastain&nbsp; *Approved by Senate 6/6/02</div>
-                            <div class="divTableCell">Pickens</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Domestic User</div>
+                            <div class="col-sm-3">Dennis Chastain&nbsp; *Approved by Senate 6/6/02</div>
+                            <div class="col-sm-2">Pickens</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>5699 Highway 11, Pickens, SC 29671</li>
                                     <li>Ph: 864-878-7455</li>
@@ -119,46 +134,46 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Industry</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Industry</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Municipalities</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Municipalities</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Power Generation Facilities</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Power Generation Facilities</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Private Water Supplier</div>
-                            <div class="divTableCell">Mr. J. Scott Willett</div>
-                            <div class="divTableCell">Anderson</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Private Water Supplier</div>
+                            <div class="col-sm-3">Mr. J. Scott Willett</div>
+                            <div class="col-sm-2">Anderson</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>998 Hunters Trail, Anderson, SC 29625</li>
                                     <li>Ph: 864-231-5987</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Public Service District</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Public Service District</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Regional Council of Governments</div>
-                            <div class="divTableCell">Chris Bickley, Jr.</div>
-                            <div class="divTableCell">Colleton</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Regional Council of Governments</div>
+                            <div class="col-sm-3">Chris Bickley, Jr.</div>
+                            <div class="col-sm-2">Colleton</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>618 Hampton Steet, Walterboro, SC 29488</li>
                                     <li>Ph: 843-726-5536</li>
@@ -166,11 +181,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Soil &amp; Water Conservation Dist.</div>
-                            <div class="divTableCell">Ms. Brenda H. Nettles</div>
-                            <div class="divTableCell">Barnwell</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Soil &amp; Water Conservation Dist.</div>
+                            <div class="col-sm-3">Ms. Brenda H. Nettles</div>
+                            <div class="col-sm-2">Barnwell</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>P.O. Box 1333, Barnwell, SC 29812</li>
                                     <li>Ph:803-259-2378</li>
@@ -178,36 +193,34 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Special Purpose District</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Special Purpose District</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                    </div>
                 </div>
                 
-                <h5 class="area">Central Drought Management Area</h5>
+                <div class="area" id="central"><h5>Central Drought Management Area</h5></div>
                 <p>Counties: Greenville, Spartanburg, Cherokee, York, Laurens, Union, Chester, Greenwood, Saluda, Newberry, Fairfield, Lexington, Richland, Calhoun, Sumter, Clarendon, Williamsburg, Georgetown</p>
-                <div class="divTable">
-                    <div class="divTableBody">
-                        <div class="divTableRow">
-                            <div class="divTableHead group">Group</div>
-                            <div class="divTableHead member">Committee Member</div>
-                            <div class="divTableHead county">County</div>
-                            <div class="divTableHead contact">Contact Information</div>
+                <div class="container divTable">
+                        <div class="row">
+                            <div class="col-sm-3 header group">Group</div>
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-2 header county">County</div>
+                            <div class="col-sm-4 header contact">Contact Information</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Agriculture</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell"></div>
-                            <div class="divTableCell"></div>
+                        <div class="row">
+                            <div class="col-sm-3">Agriculture</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-3"></div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Commission of Public Works</div>
-                            <div class="divTableCell">John W. Westcott *Approved by Senate 5/06</div>
-                            <div class="divTableCell">Spartanburg</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Commission of Public Works</div>
+                            <div class="col-sm-3">John W. Westcott *Approved by Senate 5/06</div>
+                            <div class="col-sm-2">Spartanburg</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Spartanburg Water System / Spartanburg Sanitary Sewer District, 297 South Avenue, Spartanburg, SC 29306</li>
                                     <li>Ph: (864) 580-5685</li>
@@ -216,29 +229,29 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Counties</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Counties</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Domestic User</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Domestic User</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Industry</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Industry</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Municipalities</div>
-                            <div class="divTableCell">James G. Bagley *Appointed 8/16/10</div>
-                            <div class="divTableCell">York</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Municipalities</div>
+                            <div class="col-sm-3">James G. Bagley *Appointed 8/16/10</div>
+                            <div class="col-sm-2">York</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>P.O. Box 11706, Rock Hill, SC 29731</li>
                                     <li>Ph: 803-329-5518</li>
@@ -246,17 +259,17 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Power Generation Facilities</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Power Generation Facilities</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Private Water Supplier</div>
-                            <div class="divTableCell">Brad C. Powers *Approved by Senate 5/2007</div>
-                            <div class="divTableCell">Spartanburg</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Private Water Supplier</div>
+                            <div class="col-sm-3">Brad C. Powers *Approved by Senate 5/2007</div>
+                            <div class="col-sm-2">Spartanburg</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>2241 Fews Chapel Road, Greer, SC 29651</li>
                                     <li>Ph: 864-895-1719</li>
@@ -265,23 +278,23 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Public Service District</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Public Service District</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Regional Council of Gov.</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Regional Council of Gov.</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Soil and Water Conservation District</div>
-                            <div class="divTableCell">John T. Rivers *Approved by Senate 3/08</div>
-                            <div class="divTableCell">Sumter</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Soil and Water Conservation District</div>
+                            <div class="col-sm-3">John T. Rivers *Approved by Senate 3/08</div>
+                            <div class="col-sm-2">Sumter</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>1261 Manning Drive, Summerton, SC 29148</li>
                                     <li>Ph: 803-469-0744</li>
@@ -289,11 +302,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Special Purpose District</div>
-                            <div class="divTableCell">Mike Caston *Approved by Senate 5/06</div>
-                            <div class="divTableCell">Saluda</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Special Purpose District</div>
+                            <div class="col-sm-3">Mike Caston *Approved by Senate 5/06</div>
+                            <div class="col-sm-2">Saluda</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>SJWD Water District, P.O.Box 607, Lyman, SC 29365</li>
                                     <li>Ph: 864-949-2802</li>
@@ -303,65 +316,63 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 
-                <h5 class="area">Northeast Drought Management Area</h5>
+                <div class="area" id="northeast"><h5>Northeast Drought Management Area</h5></div>
                 <p>Counties: Kershaw, Lancaster, Lee, Chesterfield,Darlington, Dillon, Marlboro, Florence, Marion, Horry</p>
-                <div class="divTable">
-                    <div class="divTableBody">
-                        <div class="divTableRow">
-                            <div class="divTableHead group">Group</div>
-                            <div class="divTableHead member">Committee Member</div>
-                            <div class="divTableHead county">County</div>
-                            <div class="divTableHead contact">Contact Information</div>
+                <div class="container divTable">
+                        <div class="row">
+                            <div class="col-sm-3 header group">Group</div>
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-2 header county">County</div>
+                            <div class="col-sm-4 header contact">Contact Information</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Agriculture</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Agriculture</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Commission of Public Works</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Commission of Public Works</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Counties</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Counties</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Domestic User</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Domestic User</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Industry</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Industry</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Regional Council of Gov.</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Regional Council of Gov.</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Municipalities</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Municipalities</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Power Generation Facilities</div>
-                            <div class="divTableCell">W. Stuart Ames</div>
-                            <div class="divTableCell">Florence</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Power Generation Facilities</div>
+                            <div class="col-sm-3">W. Stuart Ames</div>
+                            <div class="col-sm-2">Florence</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>1755 Mechanicsville Road, Florence, SC 29501</li>
                                     <li>Ph: 843-661-4195</li>
@@ -370,11 +381,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Private Water Supplier</div>
-                            <div class="divTableCell">Robert L. Brock</div>
-                            <div class="divTableCell">Marlboro</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Private Water Supplier</div>
+                            <div class="col-sm-3">Robert L. Brock</div>
+                            <div class="col-sm-2">Marlboro</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>P.O. Box 296, 187 Hunts Bluff Road, Blenheim, SC 29516</li>
                                     <li>Ph: 843-479-8988</li>
@@ -382,22 +393,22 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Public Service District</div>
-                            <div class="divTableCell">Elbert Warren</div>
-                            <div class="divTableCell">Darlington</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Public Service District</div>
+                            <div class="col-sm-3">Elbert Warren</div>
+                            <div class="col-sm-2">Darlington</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>2813 Antioch Road, Hartsville, SC 29550</li>
                                     <li>Ph: 843-332-7789</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Soil &amp; Water Conservation Dist.</div>
-                            <div class="divTableCell">Theron DeWitt *Approved by Senate/Appointed 3/02/01</div>
-                            <div class="divTableCell">Darlington</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Soil &amp; Water Conservation Dist.</div>
+                            <div class="col-sm-3">Theron DeWitt *Approved by Senate/Appointed 3/02/01</div>
+                            <div class="col-sm-2">Darlington</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>2036 Timmonsville Highway, Darlington, SC 29532</li>
                                     <li>Ph: 843-206-2184</li>
@@ -405,11 +416,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Special Purpose District</div>
-                            <div class="divTableCell">Michael E. Hancock Term expiration: March 1, 2012</div>
-                            <div class="divTableCell">Kershaw</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Special Purpose District</div>
+                            <div class="col-sm-3">Michael E. Hancock Term expiration: March 1, 2012</div>
+                            <div class="col-sm-2">Kershaw</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Lugoff-Elgin Water Authority, PO Box 125, Lugoff, South Carolina 29078</li>
                                     <li>Ph: 803-438-2991</li>
@@ -417,23 +428,21 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 
-                <h5 class="area">Southern Drought Management Area</h5>
+                <div class="area" id="southern"><h5>Southern Drought Management Area</h5></div>
                 <p>Counties: Orangeburg, Bamberg, Colleton, Dorchester, Berkeley, Charleston</p>
-                <div class="divTable">
-                    <div class="divTableBody">    
-                        <div class="divTableRow">
-                            <div class="divTableHead group">Group</div>
-                            <div class="divTableHead member">Committee Member</div>
-                            <div class="divTableHead county">County</div>
-                            <div class="divTableHead contact">Contact Information</div>
+                <div class="container divTable">   
+                        <div class="row">
+                            <div class="col-sm-3 header group">Group</div>
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-2 header county">County</div>
+                            <div class="col-sm-4 header contact">Contact Information</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Agriculture</div>
-                            <div class="divTableCell">James Traywick&nbsp;</div>
-                            <div class="divTableCell">Orangeburg</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Agriculture</div>
+                            <div class="col-sm-3">James Traywick&nbsp;</div>
+                            <div class="col-sm-2">Orangeburg</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Frog Level Farm Inc. 4712 Cordova Road, Cope, SC 29038</li>
                                     <li>Ph: 803-536-2946</li>
@@ -441,11 +450,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Commission of Public Works</div>
-                            <div class="divTableCell">Mr. Andrew ""Andy"" Fairy&nbsp;*Confirmed by Senate/Appointed 02/21/08</div>
-                            <div class="divTableCell">Charleston</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Commission of Public Works</div>
+                            <div class="col-sm-3">Mr. Andrew ""Andy"" Fairy&nbsp;*Confirmed by Senate/Appointed 02/21/08</div>
+                            <div class="col-sm-2">Charleston</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>821 Robert E. Lee Boulevard, Charleston, SC 29412</li>
                                     <li>Ph: 843-727-6856</li>
@@ -453,29 +462,29 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Counties</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Counties</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Domestic User</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Domestic User</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Industry</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Industry</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Municipalities</div>
-                            <div class="divTableCell">Mr. Eric Odom</div>
-                            <div class="divTableCell">Orangeburg</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Municipalities</div>
+                            <div class="col-sm-3">Mr. Eric Odom</div>
+                            <div class="col-sm-2">Orangeburg</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>Department of Public Utilities, City Of Orangeburg, P.O. Box 1057, Orangeburg, SC 29116</li>
                                     <li>Ph: 803-268-4401</li>
@@ -484,29 +493,29 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Power Generation Facilities</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Power Generation Facilities</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Private Water Supplier</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Private Water Supplier</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Public Service District</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Public Service District</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Regional Council of Gov.</div>
-                            <div class="divTableCell">Mr. Ronald E. Mitchum&nbsp;</div>
-                            <div class="divTableCell">Charleston</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Regional Council of Gov.</div>
+                            <div class="col-sm-3">Mr. Ronald E. Mitchum&nbsp;</div>
+                            <div class="col-sm-2">Charleston</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>1362 McMillan Avenue, Suite 100, North Charleston, SC 29405</li>
                                     <li>Ph: 843-529-0400</li>
@@ -514,11 +523,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Soil &amp; Water Conservation Dist.</div>
-                            <div class="divTableCell">Marion L. Rizer *Confirmed by Senate/Appointed 02/20/08</div>
-                            <div class="divTableCell">Colleton</div>
-                            <div class="divTableCell"><i class="fas fa-plus-square"></i>
+                        <div class="row">
+                            <div class="col-sm-3">Soil &amp; Water Conservation Dist.</div>
+                            <div class="col-sm-3">Marion L. Rizer *Confirmed by Senate/Appointed 02/20/08</div>
+                            <div class="col-sm-2">Colleton</div>
+                            <div class="col-sm-4"><i class="fas fa-plus-square"></i>
                                 <ul class="contact-info">
                                     <li>2778 Confederate Highway, Lodge, SC 29082</li>
                                     <li>Ph: 843-549-1821(W)</li>
@@ -527,16 +536,182 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Special Purpose District</div>
-                            <div class="divTableCell">Vacant</div>
-                            <div class="divTableCell">&nbsp;</div>
+                        <div class="row">
+                            <div class="col-sm-3">Special Purpose District</div>
+                            <div class="col-sm-3">Vacant</div>
+                            <div class="col-sm-3">&nbsp;</div>
                         </div>
                     </div>
+                
+                
+                
+                <div class="area" id="state"><h5>State Agency Members</h5></div>
+                <div class="container divTable">   
+                        <div class="row">
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-3 header agency">Agency</div>
+                            <div class="col-sm-6 header contact">Contact Information</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Ken Rentiers</div>
+                            <div class="col-sm-3">SCDNR, LWC Division</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>1000 Assembly Street, Columbia, SC 29201</li>
+                                    <li>Ph: 803-734-9035</li>
+                                    <li>E-mail: rentiersk@dnr.sc.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Rob Devlin</div>
+                            <div class="col-sm-3">SCDHEC</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>2600 Bull Street, Columbia, SC 29201</li>
+                                    <li>Ph: 803-898-3798</li>
+                                    <li>E-mail: DEVLINRJ@dhec.sc.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Darryl Jones</div>
+                            <div class="col-sm-3">SC Forestry Commission</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>P.O. Box 21707, Columbia, SC 29221</li>
+                                    <li>Ph: 803-896-8800</li>
+                                    <li>E-mail: djones@forestry.state.sc.us</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Brad Boozer</div>
+                            <div class="col-sm-3">SC Department of Agriculture</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>P.O. Box 11280, Columbia, SC 29211</li>
+                                    <li>Ph: 803-737-4531</li>
+                                    <li>E-mail: bboozer@scda.sc.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Ken Rentiers</div>
+                            <div class="col-sm-3">SCDNR, LWC Division</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>1000 Assembly Street, Columbia, SC 29201</li>
+                                    <li>Ph: 803-734-9035</li>
+                                    <li>E-mail: rentiersk@dnr.sc.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                
+                <div class="area" id="invited"><h5>Invited Members</h5></div>
+                <div class="container divTable">   
+                        <div class="row">
+                            <div class="col-sm-3 header member">Committee Member</div>
+                            <div class="col-sm-3 header agency">Organization</div>
+                            <div class="col-sm-6 header contact">Contact Information</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Reggie Hall</div>
+                            <div class="col-sm-3">SC Farm Bureau</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>P.O. Box 2124, Cayce-West Columbia, SC 29171</li>
+                                    <li>E-mail: rshall@scfb.com</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Jonathan Lamb</div>
+                            <div class="col-sm-3">National Weather Service</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>5777 South Aviation Avenue, Charleston, SC 29406</li>
+                                    <li>E-mail: Jonathan.Lamb@noaa.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Greg Lamberty</div>
+                            <div class="col-sm-3">National Weather Service</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>2909 Aviation Way, West Columbia, SC 29170</li>
+                                    <li>E-mail: Greg.Lamberty@noaa.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. Rick Neuherz</div>
+                            <div class="col-sm-3">National Weather Service</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>2105 Gardner Drive, Wilmington, NC 28405</li>
+                                    <li>E-mail: Rick.Neuherz@noaa.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-3">Office of the Governor</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>1205 Pendleton St, Brown Building, Room 476, Columbia, SC 29201</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. John Shelton</div>
+                            <div class="col-sm-3">USGS - Water Resources Division</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>720 Gracern Rd, Stephenson Center, Suite 129, Columbia, SC 29210-7651</li>
+                                    <li>Ph: 803-750-6112</li>
+                                    <li>E-mail: jmshelto@usgs.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Ms. Patricia Tanner</div>
+                            <div class="col-sm-3">National Weather Service</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>1549 GSP Drive, Greer, SC 29651</li>
+                                    <li>E-mail: Patricia.Tanner@noaa.gov</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col-sm-3">Mr. David Winkles</div>
+                            <div class="col-sm-3">SC Farm Bureau</div>
+                            <div class="col-sm-6"><i class="fas fa-plus-square"></i>
+                                <ul class="contact-info">
+                                    <li>P.O. Box 2124, Cayce-West Columbia, SC 29171</li>
+                                    <li>E-mail: dwinkles@scfb.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+                </div>
+                
                 </div>
             </div>
-
-        </div>
 
     </div>
     <!-- /.container -->

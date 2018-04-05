@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
 
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
 </head>
 
 <body>
@@ -40,7 +42,7 @@
               </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Impacts</a>
@@ -49,7 +51,7 @@
                         <a class="nav-link" href="committee.html">Committee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Planning</a>
+                        <a class="nav-link" href="planning.html">Planning</a>
                     </li>
                 </ul>
             </div>
@@ -93,10 +95,10 @@
                         <div class="con-value"><span id="Extreme"></span></div>
                     </div>
                 </div>
-                <p id="legend">Number of Counties in Each Category.</p>
-                
+                <p id="legend">Number of Counties in Each Category</p>
+
                 <h4>Archived Drought Status</h4>
-                <div class="archive-container" >
+                <div class="archive-container">
                     <form>
                         <button type="button" class="btn btn-info" id="backward" title="Click to view previous archived status maps."><i class="fas fa-chevron-circle-left fa-lg"></i></button>
                         <div class="form-group" id="archive-group">
@@ -108,15 +110,30 @@
                     </form>
                 </div>
             </div>
-            <!-- /.col-md-4 -->
+
         </div>
-        
-        <!--
-        <div class="row m-2">
-            <div id="heatmap" class="col-lg-12">Heatmap placeholder box thingy.</div>
+
+        <div class="row my-2 mx-md-5 text-center">
+            <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
+                <a href="#tablemodal" data-toggle="modal" data-target="#tablemodal">
+                    <img class="img-fluid img-thumbnail" src="images/table.JPG" />
+                    <h5>County Table View</h5>
+                </a>
+            </div>
+            <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
+                <a href="drought-history.html" target="_blank">
+                    <img class="img-fluid img-thumbnail" src="images/heatgrid.JPG" />
+                    <h5>Drought at a Glance</h5>
+                </a>
+            </div>
+            <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
+                <a href="#">
+                    <img class="img-fluid img-thumbnail" src="images/fire.jpg" />
+                    <h5>Historical Impacts</h5>
+                </a>
+            </div>
         </div>
-        -->
-        
+
         <div class="row my-4">
             <div class="col-lg-12">
                 <h4>The Top 7 Indicators</h4>
@@ -144,35 +161,70 @@
             <div class="col-lg-12">
                 <h4>Other Drought Indicators</h4>
                 <p>There are numerous sources of information for assessing drought for different environmental factors and industries.</p>
-                    <h6>Drought Indices</h6>
-                    <ul>
-                        <li>Standard Precipitation Index</li>
-                    </ul>
-                    <h6>Water Resources</h6>
-                    <ul>
-                        <li>South Carolina Groundwater Data Monitoring - SCDNR</li>
-                        <li>South Carolina Groundwater Network - USGS</li>
-                        <li>USGS Real-Time Streamflow Conditions</li>
-                        <li>Savannah River Lake Levels - USACE</li>
-                        <li>USGS Duration Graphs</li>
-                    </ul>
-                    <h6>Forestry</h6>
-                    <ul>
-                        <li>Current Fire Weather - SC Forestry Commission</li>
-                        <li>U.S. Forest Service Wildland Fire Assessment System</li>
-                        <li>National Keethc-Byram Soil Moisture Drought Index - USDA Forest Service</li>
-                        <li>Departure from Average Greenness - National Interagency Fire Center</li>
-                    </ul>
-                    <h6>Precipitation</h6>
-                    <ul>
-                        <li>CISA Hydroclimate Extremes Atlas</li>
-                        <li>Current Precipitation Accumulation - SE Regional Climate Center</li>
-                        <li>Current Temperature Maps - SE Regional Climate Center</li>
-                        <li>Current Soil Moisture Percentile Ranking</li>
-                    </ul>
+                <h6>Drought Indices</h6>
+                <ul>
+                    <li>Standard Precipitation Index</li>
+                </ul>
+                <h6>Water Resources</h6>
+                <ul>
+                    <li>South Carolina Groundwater Data Monitoring - SCDNR</li>
+                    <li>South Carolina Groundwater Network - USGS</li>
+                    <li>USGS Real-Time Streamflow Conditions</li>
+                    <li>Savannah River Lake Levels - USACE</li>
+                    <li>USGS Duration Graphs</li>
+                </ul>
+                <h6>Forestry</h6>
+                <ul>
+                    <li>Current Fire Weather - SC Forestry Commission</li>
+                    <li>U.S. Forest Service Wildland Fire Assessment System</li>
+                    <li>National Keethc-Byram Soil Moisture Drought Index - USDA Forest Service</li>
+                    <li>Departure from Average Greenness - National Interagency Fire Center</li>
+                </ul>
+                <h6>Precipitation</h6>
+                <ul>
+                    <li>CISA Hydroclimate Extremes Atlas</li>
+                    <li>Current Precipitation Accumulation - SE Regional Climate Center</li>
+                    <li>Current Temperature Maps - SE Regional Climate Center</li>
+                    <li>Current Soil Moisture Percentile Ranking</li>
+                </ul>
             </div>
         </div>
 
+        <!-- table popup modal. only visible when clicked from the link -->
+        <!-- The table will be populated with javascript when the map loads -->
+        <div class="modal fade" id="tablemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Current Drought Status</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Drought Status as of: 11-27-2017
+                        <table id="drought-table">
+                            <tr>
+                                <th>County</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Abbeville</td>
+                                <td>Incipient</td>
+                            </tr>
+                            <tr>
+                                <td>Aiken</td>
+                                <td>Normal</td>
+                            </tr>
+                        </table>
+                        ... so on and so forth.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /.container -->
 
@@ -191,9 +243,8 @@
     <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
     <script src="https://unpkg.com/esri-leaflet@2.0.4/dist/esri-leaflet.js"></script>
 
-    <script src="js/scCounties.geojson"></script>
     <script src="js/droughtmap.js"></script>
-
+    <script src="js/heatgrid.js"></script>
 
 </body>
 
