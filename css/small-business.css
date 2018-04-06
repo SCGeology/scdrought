@@ -80,11 +80,11 @@ body {
     font-weight: bold;
 }
 
-#Normal-h{background-color:#ebf4c3;}
-#Incipient-h{background-color: #fecc5c;}
-#Moderate-h{background-color:#fd8d3c;}
-#Severe-h{background-color:#f03b20;}
-#Extreme-h{background-color:#bd0026;}
+#Normal-h, #Normal-t {background-color:#ebf4c3;}
+#Incipient-h, #Incipient-t{background-color: #fecc5c;}
+#Moderate-h, #Moderate-t{background-color:#fd8d3c;}
+#Severe-h, #Severe-t{background-color:#f03b20;}
+#Extreme-h, #Extreme-t{background-color:#bd0026;}
 
 .thumb{
     position: absolute;
@@ -188,5 +188,5 @@ body {
 #drought-table th, #drought-table td {
     border:1px solid gray;
     width:150px;
-    padding:0.5rem 1rem;
+    padding:0.2rem 1rem;
 }

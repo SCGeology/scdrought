@@ -117,7 +117,7 @@
             <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
                 <a href="#tablemodal" data-toggle="modal" data-target="#tablemodal">
                     <img class="img-fluid img-thumbnail" src="images/table.JPG" />
-                    <h5>County Table View</h5>
+                    <h5>Current Status Table</h5>
                 </a>
             </div>
             <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
@@ -196,28 +196,21 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Current Drought Status</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Current Drought Status: <span id="table-date"></span></h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        Drought Status as of: 11-27-2017
                         <table id="drought-table">
+                            <thead>
                             <tr>
                                 <th>County</th>
                                 <th>Status</th>
                             </tr>
-                            <tr>
-                                <td>Abbeville</td>
-                                <td>Incipient</td>
-                            </tr>
-                            <tr>
-                                <td>Aiken</td>
-                                <td>Normal</td>
-                            </tr>
+                            </thead>
+                            <tbody id="drought-table-body"></tbody>
                         </table>
-                        ... so on and so forth.
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

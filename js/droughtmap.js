@@ -50,14 +50,14 @@ function getCount(c, f) {
     statusQuery.where(f + "='" + c + "'").count(function(error, count, response) {
         $("#" + decode(c)).text(count);
         $("#" + decode(c) + "-h > .graph").text("");
-        for (i = 0; i < count; i++) {
+        for (var i = 0; i < count; i++) {
             $("#" + decode(c) + "-h > .graph").append("|");
         }
     });
 }
 
 function getStats(f) {
-    for (i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) {
         getCount(i.toString(), f);
     }
 }
@@ -90,6 +90,19 @@ function setDropdown(l) {
     $("#date").text(prettydate(l));
 }
 
+function makeTable(l){
+    var statuslist = []
+    statuslayer.eachFeature(function(layer){
+        statuslist.push([layer.feature.properties["CNTYNAME"],decode(layer.feature.properties[l])])
+        statuslist.sort();
+    });
+    for (var i=0; i <=45; i++){
+        var trow = "<tr><td>"+statuslist[i][0]+"</td><td id="+statuslist[i][1]+"-t>"+statuslist[i][1]+"</td></tr>"
+        $("#drought-table-body").append(trow);
+    }
+    $("#table-date").text(prettydate(l));
+}
+
 function getLatest() {
     statuslayer.metadata(function(error, metadata) {
         $.each(metadata.fields, function(i, v) {
@@ -102,6 +115,7 @@ function getLatest() {
         setLayer(latest);
         getStats(latest);
         setDropdown(latest);
+        makeTable(latest);
     });
 }
 //call to get data updated
