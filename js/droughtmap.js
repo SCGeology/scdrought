@@ -91,6 +91,7 @@ function setDropdown(l) {
 }
 
 function makeTable(l){
+    $("#drought-table-body").empty();
     var tablequery = L.esri.query({url:data});
     tablequery.fields([l,"CNTYNAME"]).orderBy("CNTYNAME").returnGeometry(false);
     tablequery.run(function(error, fc, response){
@@ -124,14 +125,18 @@ $("#archive-select").change(function(){
     if (this.value == "current"){
         setLayer(latest);
         getStats(latest);
+        makeTable(latest);
         $("#qualifier").text("Current");
         $("#date").text(prettydate(latest));
+        $("#table-date").text(prettydate(latest));
         $("#forward").prop("disabled", true);
     } else {
         setLayer(this.value);
         getStats(this.value);
+        makeTable(this.value);
         $("#qualifier").text("Archived");
         $("#date").text(prettydate(this.value));
+        $("#table-date").text(prettydate(this.value));
         $("#forward").prop("disabled", false)
     }
     if (this.value == oldest){
