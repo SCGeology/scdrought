@@ -91,16 +91,15 @@ function setDropdown(l) {
 }
 
 function makeTable(l){
-    var statuslist = []
-    statuslayer.eachFeature(function(layer){
-        statuslist.push([layer.feature.properties["CNTYNAME"],decode(layer.feature.properties[l])])
-        statuslist.sort();
+    var tablequery = L.esri.query({url:data});
+    tablequery.fields([l,"CNTYNAME"]).orderBy("CNTYNAME").returnGeometry(false);
+    tablequery.run(function(error, fc, response){
+        for (var i=0; i <=45; i++){
+            var trow = "<tr><td>"+fc.features[i].properties["CNTYNAME"]+"</td><td id="+decode(fc.features[i].properties[l])+"-t>"+decode(fc.features[i].properties[l])+"</td></tr>"
+            $("#drought-table-body").append(trow);
+        }
+        $("#table-date").text(prettydate(l));
     });
-    for (var i=0; i <=45; i++){
-        var trow = "<tr><td>"+statuslist[i][0]+"</td><td id="+statuslist[i][1]+"-t>"+statuslist[i][1]+"</td></tr>"
-        $("#drought-table-body").append(trow);
-    }
-    $("#table-date").text(prettydate(l));
 }
 
 function getLatest() {
