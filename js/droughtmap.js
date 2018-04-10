@@ -1,3 +1,8 @@
+/* TO DO 
+
+Separate out stuff into multiple JS files, if you can. Not all of this needs to be loaded on some pages?
+
+*/
 var map = L.map('map', {
     zoomControl: false,
     maxZoom: 8,

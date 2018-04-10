@@ -292,12 +292,39 @@ Drought/drought_current_info.php</li>
         </div>
         <!-- /.container -->
     </footer>
+    
+    <a href="#faq"><div id="backup"><i class="fas fa-angle-double-up fa-3x"></i></div></a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/committee.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('#backup:hidden').stop(true, true).fadeIn();
+        } else {
+            $('#backup').stop(true, true).fadeOut();
+        }
+    });
+    
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});    
+});
+    </script>
 
 
 </body>

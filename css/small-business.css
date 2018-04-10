@@ -191,3 +191,21 @@ body {
     }
     #qualifier {display: none;}
 }
+
+#backup {
+    text-align: center;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    height:50px;
+    width:40px;
+    border:2px solid #FFA500;
+    border-radius:2px;
+    background-color:#FFA500;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(20,20,20,0.5);
+    display: none;
+    opacity: 0.7;
+}
+#backup:hover {box-shadow:0 0 0 0;}
+
