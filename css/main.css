@@ -7,6 +7,13 @@ body {
     padding-top: 56px;
   }
 }
+
+@media (max-width: 330px) {
+  #head-logo {
+    display: none;
+  }
+}
+
 #map {height:400px;}
 #con-table{
     width: 100%;
@@ -78,18 +85,7 @@ body {
     background-color:rgba(250,255,255,0.3);
     z-index: 1000;
 }
-#heat-link {
-    position: absolute;
-    bottom:5px;
-    left:20px;
-    height:70px;
-    width:300px;
-    z-index: 1001;
-}
-#heat-link img{
-    width:70px;
-    height:auto;
-}
+
 /*archived*/
 .archive-container form {
     width: 100%; /* Width of the outside container */
@@ -168,6 +164,9 @@ body {
 #faq-toc {
     line-height: 1.8rem;
 }
+.q-img{
+    width:50%;
+}
 #drought-table th, #drought-table td {
     border:1px solid gray;
     width:150px;
@@ -205,4 +204,66 @@ body {
 
 #action-more{
     display:none;
+}
+
+#table-link-btn {
+    position: absolute;
+    bottom:20px;
+    left:20px;
+    z-index: 1020;
+}
+
+#dnr-logo{
+    width:125px;
+    height: auto;
+}
+#cisa-logo{
+    width:250px;
+    height: auto
+}
+#risa-logo{
+    width:300px;
+    height: auto;
+}
+footer{
+    color:white;
+}
+footer a{
+    color:white;
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+footer a:hover{
+    color:gray;
+}
+#head-logo{
+    height:25px;
+    width: auto;
+}
+
+
+#graph-div{
+    min-width:320px;
+}
+#pdsi-img{
+    width:210px;
+}
+#sc-pdsi{
+    width:100%;
+}
+#date-stack{
+    width:80px;
+}
+.timeline-date{
+    position: absolute;
+}
+.timeline-text p {
+    margin-top: -40px;
+    padding-top: 55px;
+}
+#pdsi-legend{
+    width:150px;
+}
+.isa-text{
+    font-size:0.8em;
 }

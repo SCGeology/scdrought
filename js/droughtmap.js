@@ -19,10 +19,10 @@ var Esri_NatGeoWorldMap = L.tileLayer('https://server.arcgisonline.com/ArcGIS/re
 
 var data = "https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/drought_status/FeatureServer/0"
 
-var fieldNames = []
-var latest
-var oldest
-var position = 0
+var fieldNames = [],
+ latest,
+ oldest,
+ position = 0
 
 var statuslayer = L.esri.featureLayer({
     url: data
@@ -165,4 +165,18 @@ $("#backward").click(function(){
         .next()
         .prop("selected", true)
         .trigger("change");
+});
+
+var pdfParse = function(){
+    var d = $("#date").text()
+    return [d.substring(0,2), d.substring(3,5), d.substring(8)].join("")
+}
+
+$("#reportdl").on('click', function(){
+    window.open("pdf/status-reports/Status"+pdfParse()+".pdf"); 
+});
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
 });

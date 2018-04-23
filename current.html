@@ -30,7 +30,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">South Carolina Drought</a>
+            <a class="navbar-brand" href="./index.html">South Carolina Drought <img src="logos/drought_logo.png" id="head-logo"/></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,7 +45,7 @@
                         <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Impacts</a>
+                        <a class="nav-link" href="impacts.html">Impacts</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="committee.html">Committee</a>
@@ -68,6 +68,7 @@
             <div class="col-lg-7">
                 <div id="map"></div>
                 <div id="thumb"></div>
+                <a id="table-link-btn" class="btn btn-outline-primary btn-sm" href="#tablemodal" data-toggle="modal" data-target="#tablemodal" role="button">Table View</a>
             </div>
             <!-- /.col-lg-8 -->
             <div class="col-lg-5">
@@ -113,6 +114,7 @@
 
         </div>
 
+    <!--    
         <div class="row my-2 mx-md-5 text-center">
             <div class="col-sm-4 px-5 px-sm-3 px-lg-5 py-3 py-sm-0">
                 <a href="#tablemodal" data-toggle="modal" data-target="#tablemodal">
@@ -133,66 +135,58 @@
                 </a>
             </div>
         </div>
+-->
 
-        <div class="row my-4">
+        <div class="row my-2">
             <div class="col-lg-12">
                 <h4>The Top 7 Indicators</h4>
                 <h5>South Carolina uses these seven indicators to determine the current drought status.</h5>
                 <ul>
-                    <li><a href="http://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?SC" target="_blank">United States Drought Monitor for South Carolina</a></li>
-                    <li>Crop Moisture Index</li>
-                    <li>Palmer Drought Severity Index</li>
-                    <li>Streamflow Levels</li>
-                    <li>Lake/Reservoir Levels</li>
-                    <li>Groundwater Levels</li>
-                    <li>Keetch-Byram Drought Index</li>
-                    <li>Percent of Normal Rainfall (NOAA)
-                        <br>
-                        <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.8370597171&location_name=CONUS_+_Puerto_Rico&location_type=us&lon=-81.2014116022&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last30days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 30 Days</a>
-                        <br>
-                        <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.4987498812&location_name=CONUS_%20_Puerto_Rico&location_type=us&lon=-80.8663285944&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last60days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 60 Days</a>
-                    </li>
+                    <li><a href="http://droughtmonitor.unl.edu/CurrentMap/StateDroughtMonitor.aspx?SC" target="_blank">United States Drought Monitor for South Carolina</a> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Weekly product, drought areas mapped by intensity, D1 is the least intense and D4 is the most intense."></i></li>
+                    <li>Crop Moisture Index <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Weekly product, agricultural growing season short-term (up to 4 weeks) dryness or wetness."></i></li>
+                    <li><a href="https://www.ncdc.noaa.gov/temp-and-precip/drought/weekly-palmers/" target="_blank">Palmer Drought Severity Index </a><i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Monthly product, depicts prolonged (month, years) abnormally dry or wed conditions."></i></li>
+                    <li><a href="images/status_update_images/streaflow_status_14day_avg.png">Streamflow Levels</a> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Updated for the DRC meetings with the USGS streamflow data."></i></li>
+                    <li><a href="images/status_update_images/lake_levels_status.png">Lake/Reservoir Levels</a> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Updated for the DRC meetings with lake and reservoir levels data."></i></li>
+                    <li><a href="images/status_update_images/groundwater_status.png">Groundwater Levels</a> <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Updated for the DRC meetings with groundwater levels data."></i></li>
+                    <li>Keetch-Byram Drought Index <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Daily depiction of forest fire potential."></i></li>
                 </ul>
             </div>
         </div>
 
-        <div class="row my-2">
-            <div class="col-lg-12">
-                <p>To learn more about drought indices and indicators, how drought is measured, and who monitors drought in South Carolina,<br>
+        <p>To learn more about drought indices and indicators, how drought is measured, and who monitors drought in South Carolina,<br>
                     visit the <a href="resources.html">South Carolina Drought 101 page</a>.</p>
-            </div>
-        </div>
         
         <div class="row my-4">
             <div class="col-lg-12">
                 <h4>Other Drought Indicators</h4>
                 <p>There are numerous sources of information for assessing drought for different environmental factors and industries.</p>
-                <h6>Drought Indices</h6>
+                <h6>Precipitation</h6>
                 <ul>
-                    <li>Standard Precipitation Index</li>
+                    <li>Percent of Normal Rainfall (NOAA) <i class="fas fa-question-circle" data-toggle="tooltip" data-placement="right" title="Updated daily to show cumulative dryness or wetness compare to long-term averages."></i></li>
+                    <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.8370597171&location_name=CONUS_+_Puerto_Rico&location_type=us&lon=-81.2014116022&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last30days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 30 Days</a>
+                        <br>
+                    <a href="https://water.weather.gov/precip/index.php?analysis_date=1521417600&lat=33.4987498812&location_name=CONUS_%20_Puerto_Rico&location_type=us&lon=-80.8663285944&precip_layer=0.75&product=percent&recent_type=today&rfc_layer=-1&state_layer=-1&hsa_layer=-1&county_layer=-1&time_frame=last60days&time_type=recent&units=eng&zoom=7&domain=current" target="_blank">Last 60 Days</a>
+
+                    <li><a href="http://www.sercc.com/climateinfo/precip_maps" target="_blank">Current Precipitation Accumulation</a> - SE Regional Climate Center</li>
+                    <li><a href="http://www.sercc.com/climateinfo/temp_maps" target="_blank">Current Temperature Maps</a> - SE Regional Climate Center</li>
+                    <li><a href="http://www.cpc.ncep.noaa.gov/soilmst/img/curr.w.rank.daily.gif" target="_blank">Current Soil Moisture Percentile Ranking</a></li>
                 </ul>
                 <h6>Water Resources</h6>
                 <ul>
-                    <li>South Carolina Groundwater Data Monitoring - SCDNR</li>
-                    <li>South Carolina Groundwater Network - USGS</li>
-                    <li>USGS Real-Time Streamflow Conditions</li>
-                    <li>Savannah River Lake Levels - USACE</li>
-                    <li>USGS Duration Graphs</li>
+                    <li><a href="http://www.dnr.sc.gov/water/hydro/groundwater/groundwater.html" target="_blank">South Carolina Groundwater Data Monitoring</a> - SCDNR</li>
+                    <li><a href="https://www.usgs.gov/centers/sa-water/" target="_blank">South Carolina Groundwater Network</a> - USGS</li>
+                    <li><a href="https://waterdata.usgs.gov/sc/nwis/rt" target="_blank">Real-Time Streamflow Conditions</a> - USGS</li>
+                    <li><a href="http://www.sas.usace.army.mil/">Savannah River Lake Levels</a> - USACE</li>
+                    <li><a href="https://waterwatch.usgs.gov/index.php?sno=sc&yr=2008&dt=dv14d&btnGo=GO&m=sitedur" target="_blank">Duration Graphs for Lakes and Streams</a> - USGS</li>
                 </ul>
                 <h6>Forestry</h6>
                 <ul>
-                    <li>Current Fire Weather - SC Forestry Commission</li>
-                    <li>U.S. Forest Service Wildland Fire Assessment System</li>
-                    <li>National Keethc-Byram Soil Moisture Drought Index - USDA Forest Service</li>
-                    <li>Departure from Average Greenness - National Interagency Fire Center</li>
+                    <li><a href="http://www.state.sc.us/forest/bweather.htm" target="blank">Current Fire Weather</a> - SC Forestry Commission</li>
+                    <li><a href="https://www.wfas.net/" target="_blank">Wildland Fire Assessment System</a> - USDA Forest Service</li>
+                    <li><a href="https://www.wfas.net/images/firedanger/kbdi.png" target="_blank">National Keethc-Byram Soil Moisture Drought Index</a> - USDA Forest Service</li>
+                    <li><a href="https://www.wfas.net/images/firedanger/da1panel.png" target="_blank">Departure from Average Greenness</a> - National Interagency Fire Center</li>
                 </ul>
-                <h6>Precipitation</h6>
-                <ul>
-                    <li>CISA Hydroclimate Extremes Atlas</li>
-                    <li>Current Precipitation Accumulation - SE Regional Climate Center</li>
-                    <li>Current Temperature Maps - SE Regional Climate Center</li>
-                    <li>Current Soil Moisture Percentile Ranking</li>
-                </ul>
+                
             </div>
         </div>
 
@@ -227,10 +221,41 @@
     </div>
     <!-- /.container -->
 
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+            <div class="row">
+                <div class="col-lg-4 order-lg-2 text-center">
+                    <img src="logos/dnr_white_text.png" alt="scdnr logo" class="img-fluid mb-3" id="dnr-logo"/>
+                    <p>SCDNR State Climate Office<br>
+                    Land, Water, and Conservation Division<br>
+                        State Climate Office<br>
+                        P.O. Box 167<br>
+                        Columbia, SC 29202<br>
+                    </p>
+                </div>
+                <div class="col-lg-4 mt-4 mt-md-0 text-center text-md-right order-lg-3">
+                    <img src="logos/CISAlogoTEXT.png" alt="cisa logo" id="cisa-logo"/>
+                    <img src="logos/RISA_logo_highres.png" alt="risa logo" id="risa-logo"/>
+                </div>
+                <div class="col-lg-4 order-lg-1">
+                    <p class="m-1">SCDrought.com is brought to you by:<br>
+                        <a href="http://dnr.sc.gov/climate/sco">SCDNR State Climate Office</a><br>
+                        <a href="http://www.cisa.sc.edu/">Carolinas Integrated Sciences and Assessments - A NOAA RISA Team</a><br>
+                        <a href="https://cpo.noaa.gov/Meet-the-Divisions/Climate-and-Societal-Interactions/RISA">Regional Integrated Sciences and Assessments</a>                    
+                    </p>
+                    <p class="mt-3">Site Navigation:<br>
+                        <a href="index.html">Home</a><br>
+                        <a href="committee.html">SC Drought Response Committee</a><br>
+                        <a href="current.html">Current Drought Conditions</a><br>
+                        <a href="impacts.html">Drought Impacts</a><br>
+                        <a href="planning.html">Drought Planning</a><br>
+                        <a href="resources.html">Drought Resources</a><br>
+                    </p>
+                    <p class="mt-3">Copyright &copy; 2018</p>
+                </div>
+            </div>
+            
         </div>
         <!-- /.container -->
     </footer>
