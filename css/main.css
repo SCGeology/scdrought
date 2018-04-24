@@ -222,7 +222,7 @@ body {
     height: auto
 }
 #risa-logo{
-    width:300px;
+    width:250px;
     height: auto;
 }
 footer{
@@ -231,16 +231,17 @@ footer{
 footer a{
     color:white;
     text-decoration: underline;
-    font-size: 0.8em;
 }
 footer a:hover{
     color:gray;
+}
+.foot-nav a{
+    font-size: 0.8em;
 }
 #head-logo{
     height:25px;
     width: auto;
 }
-
 
 #graph-div{
     min-width:320px;
@@ -266,4 +267,10 @@ footer a:hover{
 }
 .isa-text{
     font-size:0.8em;
+}
+.big-pic{
+    max-width: 800px;
+}
+#faq figure{
+    margin-left:0.4em;
 }
