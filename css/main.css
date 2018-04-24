@@ -239,8 +239,9 @@ footer a:hover{
     font-size: 0.8em;
 }
 #head-logo{
-    height:25px;
+    height:40px;
     width: auto;
+    margin-left: 10px;
 }
 
 #graph-div{
@@ -263,7 +264,7 @@ footer a:hover{
     padding-top: 55px;
 }
 #pdsi-legend{
-    width:150px;
+    width:280px;
 }
 .isa-text{
     font-size:0.8em;
@@ -273,4 +274,19 @@ footer a:hover{
 }
 #faq figure{
     margin-left:0.4em;
+}
+.navbar a{
+    color:white;
+}
+.navbar{
+    font-size:1.2em;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+.navbar-brand{
+    font-size:1.4em;
+}
+.active {
+    background-color: #6c757d;
 }
