@@ -8,12 +8,6 @@ body {
   }
 }
 
-@media (max-width: 330px) {
-  #head-logo {
-    display: none;
-  }
-}
-
 #map {height:400px;}
 #con-table{
     width: 100%;
@@ -136,7 +130,7 @@ body {
 }
 
 .question, .area{    
-    padding-top: 60px;
+    padding-top: 70px;
     margin-top: -40px;
     margin-bottom: 20px;
 }
@@ -261,7 +255,7 @@ footer a:hover{
 }
 .timeline-text p {
     margin-top: -40px;
-    padding-top: 55px;
+    padding-top: 70px;
 }
 #pdsi-legend{
     width:280px;
